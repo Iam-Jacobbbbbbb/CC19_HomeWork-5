@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    padding: 4px 8px;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0 60px 10px 60px;
+    border-bottom:1px solid gray ;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.topconter a {
+    font-weight: 900;
+    text-decoration: none;
+    color: #333;
+}
+
+.topconter a:hover {
+    font-weight: 900;
+    text-decoration: none;
+    color: #14b68b;
+}
+
+.logo-text img {
+    width: 200px;
+}
+
+.topconter ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topleft{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #888888;
+}
+
+.topleft a {
+    font-weight: 900;
+    text-decoration: none;
+    color: #333;
+}
+
+.topleft a:hover {
+    font-weight: 900;
+    text-decoration: none;
+    color: #14b68b;
+}
+
+.topleft .topleft-svg {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topleft svg {
+    width: 26px;
+}
+
+.button-spece ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.topleft .theone {
+    display: grid;
+    place-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 200px;
+    top: 16px;
+}
+
+main {
+    max-width: 1280px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.topic {
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.pages {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1.5rem;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
+
+.pages > * {
+    min-width: 500px;
+}
+
+.etc1 { 
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etc1 svg {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #14b68b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    transition: all .5s ease;
+}
+
+.etc1 svg:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #14b68b;
+}
+
+.etc2 svg {
+    width: 24px;
+    height: 24px;
+}
+
+.page-right {
+    width: 48%;
+    border: 1px solid #eee;
+    border-radius: 0.8rem;
+    padding: 1.6rem 1.5rem;
+}
+
+.pageleft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 51%;
+    gap: 1.5rem;
+}
+
+.pageleft1, .pageleft2  {
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 32px 0px #efefef;
+}
+
+h4 {
+    font-size: 1.65rem;
+    font-weight: 800;
+}
+
+.sub-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.subtotal-topic {
+    font-size: 1rem;
+    color: #888888;
+}
+
+.subtotal-price {
+    font-size: 1.15rem;
+    color: #494949;
+}
+
+.promotion {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.coupon-icon  {
+    width: 2.5rem;
+}
+
+.coupon-icon svg {
+    width: 28px;
+    fill: #14b68b;
+}
+
+.coupon-code  {
+    margin-right: 0.75rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coupon-code input[type=text] {
+    border: 1px solid rgb(233, 225, 225);
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.25rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.coupon-code input[type=text]::placeholder {
+    font-family: "Lato", serif;
+    color: #c0c0c0;
+}
+
+.coupon-btn {
+    display: flex;
+    width: 9rem;
+}
+
+.btn-promotion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    padding: 0.5rem;
+    color: #12d29e;
+    border: 1px solid #12d29e;
+    border-radius: 0.75rem;
+    height: 2.65rem;
+    width: 100%;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+
+.btn-promotion:hover {
+    background-color: #12d29e;
+    color: #fff;
+}
+
+.total-payment {
+    margin-top: 1.5rem;
+    border-top: 1px solid #ecebeb;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.btn-check {
+    background-color: #12d29e;
+    color: rgb(12, 32, 58);
+    width: 100%;
+    height: 2.65rem;
+    font-size: 1rem;
+    font-weight: 800;
+    word-spacing: 3px;
+    padding-block: 8px;
+    border:  none;
+    border-radius: 0.75rem;
+    margin-top: 1.5rem;
+    box-shadow: 0px 4px 12px 1px #12d29eaa;
+    transition: all .5s ease;
+}
+
+.btn-check:hover {
+    background-image: linear-gradient(to bottom, #078f6baa, #07a077aa);
+    color: white;
+    cursor: pointer;
+}
+
+.total-payment-price {
+    color: #10c796;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+}
+
+.pics {
+    background-color: #10c796;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+}
+
+.pics-1,
+.pics-2 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12.5%;
+    padding: 1.25rem;
+    color: white;
+}
+
+.pics-icon {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 12px;
+    border-radius: 25%;
+}
+
+.pics-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.pics-1 {
+    background-image: linear-gradient(to bottom, #8dc4f3, #3fa0e0);
+    box-shadow: 0px 2px 4px #e5e5e5;
+}
+
+.pics-2 {
+    background-image: linear-gradient(to bottom, #f5c35e, #f67636);
+    box-shadow: 0px 2px 4px #e5e5e5;
+}
+
+.page-left-3 {
+    padding: 0 2rem 0 1.5rem;
+    flex-grow: 1;
+}
+
+.pageleft3-top {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pageleft3-top-level {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 2.5rem;
+    gap: 0.5rem;
+}
+
+.etc2 {
+    min-width: 32.5%;
+}
+
+.pics-icon-container {
+    margin-top: 0.25rem;
+}
+
+select{
+    color: #858585;
+    font-weight: 700;
+    padding: 0.05rem 0.25rem; 
+    font-size: 0.8rem;
+    position: absolute;
+    top: 7px;
+    border: 1px solid #eee;
+}
+
+select:active,
+select:hover {
+    border:  1px solid #14b68b;
+    border-radius: 0.25rem;
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.page-left-3-price {
+    font-size: 1.2rem;
+    margin-top: 1.25rem;
+}
+
+.pageleft3-top-level {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+
+.pageleft3-top-level-1 svg:first-child {
+    fill: #10c796;
+    width: 18px;
+    height: 18px;
+}
+
+.pageleft3-top-level-1 svg {
+    fill: #e8eeee;
+    width: 18px;
+    height: 18px;
+}
+.pageleft3-top-level-2 svg {
+    fill: #10c796;
+    width: 18px;
+    height: 18px;
+}
+
+.pageleft3-top-level-2 svg:last-child {
+    fill: #e8eeee;
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .topleft .theone {
+        z-index: 5;
+        right: 610px;
+        top: 80px;
+    }
+}
